@@ -1,50 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9a7ee5"
     tools:context=".Stock">
 
-    <TextView
-        android:id="@+id/astrazeneca"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Astrazeneca"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="500dp"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/blue_border_rounded_cornwe"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RelativeLayout>
 
         <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Astrazenecaaaaaa"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="0dp" />
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Retour"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/namePfizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="62dp"
+            android:background="#52b788"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Stock de Pfizer"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/stockPfizer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="62dp"
+            android:background="#b5e48c"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/PfizerEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="62dp"
+            android:background="@color/colorSecondary"
+            android:maxLines="1"
+            android:paddingLeft="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:hint='Entrez une quantité...'
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/PfizerButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Editer le Stock"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/nameAstra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="62dp"
+            android:background="#52b788"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Stock de Astrazeneca"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/stockAstra"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="62dp"
+            android:background="#b5e48c"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/AstraEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="62dp"
+            android:background="@color/colorSecondary"
+            android:maxLines="1"
+            android:paddingLeft="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:hint='Entrez une quantité...'
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/AstraButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Editer le Stock"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"/>
+
+
+        <TextView
+            android:id="@+id/nameModerna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="62dp"
+            android:background="#52b788"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Stock de Moderna"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/stockModerna"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="62dp"
+            android:background="#b5e48c"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/ModernaEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="62dp"
+            android:background="@color/colorSecondary"
+            android:maxLines="1"
+            android:paddingLeft="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:hint='Entrez une quantité...'
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/ModernaButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Editer le Stock"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"/>
+
+
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
