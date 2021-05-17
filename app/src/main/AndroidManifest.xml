@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Vaccincovid">
-        <activity android:name=".Stock"></activity>
+        <activity
+            android:name=".PrendreRDV"
+            android:label="@string/title_activity_prendre_r_d_v"
+            android:theme="@style/Theme.Vaccincovid.NoActionBar"></activity>
+        <activity android:name=".NewRDV" />
+        <activity
+            android:name=".RDV"
+            android:label="@string/title_activity_r_d_v"
+            android:theme="@style/Theme.Vaccincovid.NoActionBar" />
+        <activity android:name=".Stock" />
         <activity android:name=".Connexion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
