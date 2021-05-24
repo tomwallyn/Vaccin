@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Fonction {
-    public static String url = "jdbc:mysql://10.0.2.2:3308/vaccin";
+    public static String url = "jdbc:mysql://10.0.2.2:3306/vaccin";
 
     public static String user = "root";
     public static String pass = "";

@@ -15,7 +15,6 @@
             android:name=".PrendreRDV"
             android:label="@string/title_activity_prendre_r_d_v"
             android:theme="@style/Theme.Vaccincovid.NoActionBar"></activity>
-        <activity android:name=".NewRDV" />
         <activity
             android:name=".RDV"
             android:label="@string/title_activity_r_d_v"
